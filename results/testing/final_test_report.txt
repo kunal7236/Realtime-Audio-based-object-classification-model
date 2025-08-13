@@ -1,0 +1,24 @@
+YAMNet Models - Final Test Report
+============================================================
+Test samples processed: 819
+Failed files: 0
+
+FINAL MODEL PERFORMANCE:
+Random Forest Test Accuracy: 0.915 (91.5%)
+Neural Network Test Accuracy: 0.890 (89.0%)
+
+RECOMMENDATION: Use Random Forest (+2.4% better)
+
+PER-CLASS PERFORMANCE:
+--------------------------------------------------
+Class            Samples   RF Acc   NN Acc     Best
+--------------------------------------------------
+air_conditioner      100    0.940    0.900       RF
+car_horn              33    0.909    0.879       RF
+children_playing       99    0.939    0.889       RF
+dog_bark              96    0.906    0.927       NN
+drilling             100    0.910    0.880       RF
+engine_idling        102    0.833    0.784       RF
+jackhammer            99    0.899    0.889       RF
+siren                 90    0.978    0.944       RF
+street_music         100    0.920    0.920      Tie

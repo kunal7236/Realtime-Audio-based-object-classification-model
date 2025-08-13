@@ -1,0 +1,65 @@
+{
+    "enhanced_realtime_config": {
+        "audio_settings": {
+            "sample_rate": 16000,
+            "chunk_duration": 3.0,
+            "overlap_duration": 1.0,
+            "frames_per_buffer": 1024,
+            "channels": 1,
+            "format": "float32"
+        },
+        "detection_settings": {
+            "confidence_threshold": 0.6,
+            "alert_threshold": 0.8,
+            "smoothing_window": 5,
+            "process_interval": 2.0,
+            "silence_threshold": 0.01,
+            "min_audio_energy": 0.005,
+            "silence_report_interval": 10
+        },
+        "safety_sounds": {
+            "car_horn": {
+                "icon": "🚗",
+                "label": "CAR HORN",
+                "priority": "high",
+                "alert_message": "VEHICLE APPROACHING"
+            },
+            "siren": {
+                "icon": "🚨", 
+                "label": "EMERGENCY SIREN",
+                "priority": "high",
+                "alert_message": "EMERGENCY VEHICLE"
+            },
+            "dog_bark": {
+                "icon": "🐕",
+                "label": "DOG BARK",
+                "priority": "medium",
+                "alert_message": "DOG NEARBY"
+            },
+            "drilling": {
+                "icon": "🔧",
+                "label": "DRILLING",
+                "priority": "medium",
+                "alert_message": "CONSTRUCTION NOISE"
+            },
+            "jackhammer": {
+                "icon": "⚒️",
+                "label": "JACKHAMMER",
+                "priority": "medium", 
+                "alert_message": "CONSTRUCTION WORK"
+            }
+        },
+        "model_paths": {
+            "yamnet_hub": "https://tfhub.dev/google/yamnet/1",
+            "rf_model": "models/enhanced_yamnet_random_forest.joblib",
+            "nn_model": "models/enhanced_yamnet_neural_network.keras",
+            "label_encoder": "models/enhanced_yamnet_label_encoder.joblib"
+        },
+        "display_settings": {
+            "show_confidence": true,
+            "show_timestamp": true,
+            "show_model_source": true,
+            "max_history_display": 10
+        }
+    }
+}

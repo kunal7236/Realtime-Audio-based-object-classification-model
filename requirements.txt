@@ -1,0 +1,31 @@
+# Core ML Libraries
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Audio Processing
+librosa
+soundfile
+audioread
+pyaudio  # For real-time audio input (may require additional system dependencies)
+pydub    # Used in test_audio_file.py for audio file format conversion
+
+# Deep Learning
+tensorflow>=2.0.0
+tensorflow_hub
+
+# System Monitoring
+psutil
+memory-profiler
+
+# Utilities
+tqdm
+joblib
+requests
+urllib3
+
+# Jupyter for analysis
+jupyter
+ipywidgets

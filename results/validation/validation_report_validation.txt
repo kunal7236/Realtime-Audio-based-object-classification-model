@@ -1,0 +1,19 @@
+YAMNet Model Validation Report - VALIDATION Split
+============================================================
+Total samples processed: 1636
+Failed files: 0
+
+Random Forest Accuracy: 0.922 (92.2%)
+Neural Network Accuracy: 0.887 (88.7%)
+
+Per-Class Performance:
+----------------------------------------
+air_conditioner (200 samples): RF 0.925 | NN 0.830
+car_horn        ( 74 samples): RF 0.919 | NN 0.946
+children_playing (198 samples): RF 0.949 | NN 0.909
+dog_bark        (187 samples): RF 0.882 | NN 0.909
+drilling        (197 samples): RF 0.939 | NN 0.904
+engine_idling   (198 samples): RF 0.904 | NN 0.869
+jackhammer      (201 samples): RF 0.920 | NN 0.881
+siren           (181 samples): RF 0.950 | NN 0.906
+street_music    (200 samples): RF 0.910 | NN 0.870
